@@ -530,18 +530,18 @@
                         <br>
                         с радостью ответят на все Ваши вопросы!
                     </p>
-                    <form action="call-back.php" method="post" class="form-callback">
+                    <form action="./send.php" method="post" class="form-callback" accept-charset="utf-8">
                         <p class="form-callback__item form-callback__item--center">
                             <label for="name" class="visually-hidden">
                                 Имя:
                             </label>
-                            <input type="text" class="input" placeholder="Имя" id="name">
+                            <input type="text" class="input" name="first_name" placeholder="Имя" id="name" required>
                         </p>
                         <p class="form-callback__item form-callback__item--center">
                             <label for="phone" class="visually-hidden">
                                 Телефон:
                             </label>
-                            <input type="text" class="input" placeholder="Номер телефона" id="phone" data-mask="callback-catalog-phone">
+                            <input type="text" class="input" placeholder="Номер телефона" name="phone" id="phone" data-mask="callback-catalog-phone" required>
                         </p>
                         <p class="form-callback__submit form-callback__item--center">
                             <button type="submit" class="button button--full-orange">
@@ -734,18 +734,18 @@
                     <p class="customer-form__text">
                         Оставте свои контакты<br> и мы свяжемся с Вами незамедлительно
                     </p>
-                    <form action="customer.php" method="post" class="record-form">
+                    <form action="./send.php" method="post" class="record-form">
                         <p class="customer-form__item">
                             <label for="customer-name" class="visually-hidden">
                                 Ваше имя
                             </label>
-                            <input type="text" class="input input--black" id="customer-name" placeholder="Имя">
+                            <input type="text" class="input input--black" name="first_name" id="customer-name" placeholder="Имя" required>
                         </p>
                         <p class="customer-form__item">
                             <label for="customer-phone" class="visually-hidden">
                                 Номер телефона
                             </label>
-                            <input type="text" class="input input--black" id="customer-phone" placeholder="Номер телефона" data-mask="callback-catalog-phone">
+                            <input type="text" class="input input--black" id="customer-phone" name="phone" placeholder="Номер телефона" data-mask="callback-catalog-phone" required>
                         </p>
                         <p class="customer-form__submit">
                             <button class="button record-form--button" type="submit">
