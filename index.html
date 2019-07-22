@@ -19,48 +19,48 @@
                     <img src="img/logo.svg" width="119" height="36" alt="Логотип Beautyepil">
                 </a>
             </div>
-                <div class="site-header-menu grid-column">
-                    <button class="site-header__toggle">
+            <div class="site-header-menu grid-column">
+                <button class="site-header__toggle">
                         <span class="visually-hidden">
                             Открыть меню
                         </span>
-                        <span class="site-header__line"></span>
-                    </button>
-                    <div class="header__menu-wrap">
-                        <button class="site-header__close">
+                    <span class="site-header__line"></span>
+                </button>
+                <div class="header__menu-wrap">
+                    <button class="site-header__close">
                             <span class="visually-hidden">
                                 Закрыть меню
                             </span>
-                        </button>
-                        <ul class="menu-list list-reset grid-row">
-                            <li class="menu-item">
-                                <a href="#we" class="menu-link anchor" data-name="Почему мы">
-                                    Почему мы
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#price" class="menu-link anchor" data-name="Цены">
-                                    Цены
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#review" class="menu-link anchor" data-name="Отзывы клиентов">
-                                    Отзывы клиентов
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#personal" class="menu-link anchor" data-name="Наши мастера">
-                                    Наши мастера
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#contacts" class="menu-link anchor" data-name="Контакты">
-                                    Контакты
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="overlay"></div>
+                    </button>
+                    <ul class="menu-list list-reset grid-row">
+                        <li class="menu-item">
+                            <a href="#we" class="menu-link anchor" data-name="Почему мы">
+                                Почему мы
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#price" class="menu-link anchor" data-name="Цены">
+                                Цены
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#review" class="menu-link anchor" data-name="Отзывы клиентов">
+                                Отзывы клиентов
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#personal" class="menu-link anchor" data-name="Наши мастера">
+                                Наши мастера
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#contacts" class="menu-link anchor" data-name="Контакты">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="overlay"></div>
             </div>
         </nav>
         <div class="site-header-callback grid-column d-flex">
@@ -91,7 +91,7 @@
                     <div class="social">
                         <ul class="social-list list-reset">
                             <li class="social-item">
-                                <a href="#" class="social-link">
+                                <a href="https://www.instagram.com/shugaring_beautyepil/?hl=ru/" target="_blank" class="social-link">
                                         <span class="visually-hidden">
                                             Инстаграм
                                         </span>
@@ -139,9 +139,9 @@
                 </div>
             </div>
             <div class="promo-image grid-column">
-                <img src="img/promo-1.jpg"  width="487" height="731" alt="Шугаринг">
+                <img class="lazy loaded" data-src="img/promo-1.jpg" src="img/promo-1.jpg" data-was-processed="true" width="487" height="731" alt="Шугаринг">
                 <div class="promo-image-wrap">
-                    <img src="img/promo-1.jpg" width="487" height="731" alt="Шугаринг">
+                    <img class="lazy loaded" data-src="img/promo-1.jpg" src="img/promo-1.jpg" data-was-processed="true" width="487" height="731" alt="Шугаринг">
                 </div>
             </div>
         </div>
@@ -530,12 +530,12 @@
                         <br>
                         с радостью ответят на все Ваши вопросы!
                     </p>
-                    <form action="./send.php" method="post" class="form-callback" accept-charset="utf-8">
+                    <form action="send.php" method="post" class="form-callback">
                         <p class="form-callback__item form-callback__item--center">
                             <label for="name" class="visually-hidden">
                                 Имя:
                             </label>
-                            <input type="text" class="input" name="first_name" placeholder="Имя" id="name" required>
+                            <input type="text" class="input" placeholder="Имя" name="first_name" id="name" required>
                         </p>
                         <p class="form-callback__item form-callback__item--center">
                             <label for="phone" class="visually-hidden">
@@ -561,7 +561,7 @@
             <div class="slider-wrap">
                 <div class="review-slider">
                     <div class="review-slider__item review-slider__text">
-                        <img src="img/reviews.jpg" alt="Фото клиента Анна Максимчук" width="121" height="121" class="review-slider__image">
+                        <img data-src="img/reviews.jpg" data-was-processed="true" src="img/reviews.jpg" alt="Фото клиента Анна Максимчук" width="121" height="121" class="review-slider__image lazy loaded">
                         <p class="review-slider__name">
                             Анна Максимчук
                         </p>
@@ -574,7 +574,7 @@
                         </p>
                     </div>
                     <div class="review-slider__item review-slider__text">
-                        <img src="img/reviews.jpg" alt="Фото клиента Анна Максимчук" width="121" height="121" class="review-slider__image">
+                        <img data-src="img/reviews.jpg" data-was-processed="true" src="img/reviews.jpg" alt="Фото клиента Анна Максимчук" width="121" height="121" class="review-slider__image lazy loaded">
                         <p class="review-slider__name">
                             Анна Максимчук
                         </p>
@@ -587,7 +587,7 @@
                         </p>
                     </div>
                     <div class="review-slider__item review-slider__text">
-                       <img src="img/reviews.jpg" alt="Фото клиента Анна Максимчук" width="121" height="121" class="review-slider__image">
+                        <img data-src="img/reviews.jpg" data-was-processed="true" src="img/reviews.jpg" alt="Фото клиента Анна Максимчук" width="121" height="121" class="review-slider__image lazy loaded">
                         <p class="review-slider__name">
                             Анна Максимчук
                         </p>
@@ -600,7 +600,7 @@
                         </p>
                     </div>
                     <div class="review-slider__item review-slider__text">
-                        <img src="img/reviews.jpg" alt="Фото клиента Анна Максимчук" width="121" height="121" class="review-slider__image">
+                        <img data-src="img/reviews.jpg" data-was-processed="true" src="img/reviews.jpg" alt="Фото клиента Анна Максимчук" width="121" height="121" class="review-slider__image lazy loaded">
                         <p class="review-slider__name">
                             Анна Максимчук
                         </p>
@@ -679,9 +679,9 @@
             <ul class="personal__list staff">
                 <li class="personal__item">
                     <div class="staff__content">
-                        <img src="img/image-8.jpg" width="358" height="539" alt="Анна Кощенко" class="staff__first">
+                        <img data-src="img/image-8.jpg" src="img/image-8.jpg" width="358" height="539" alt="Анна Кощенко" class="staff__first lazy loaded" data-was-processed="true">
                         <div class="personal__large">
-                            <img src="img/image-8-big.jpg" width="414" height="623" alt="Анна Кощенко" class="staff__second">
+                            <img data-src="/image-8-big.jpg" src="img/image-8-big.jpg" width="414" height="623" alt="Анна Кощенко" class="staff__second lazy loaded" data-was-processed="true">
                             <div class="staff__info staff__info--left">
                                 <p class="staff__position">
                                     Топовый мастер
@@ -698,9 +698,9 @@
                 </li>
                 <li class="personal__item">
                     <div class="staff__content">
-                        <img data-src="img/image-9.jpg" src="img/image-9.jpg" width="358" height="539" alt="Наталья Воловик" class="staff__first">
+                        <img data-src="img/image-9.jpg" src="img/image-9.jpg" width="358" height="539" alt="Наталья Воловик" class="staff__first lazy loaded" data-was-processed="true">
                         <div class="personal__large">
-                            <img src="img/image-9-big.jpg" width="414" height="623" alt="Наталья Воловик" class="staff__second">
+                            <img data-src="img/image-9-big.jpg" src="img/image-9-big.jpg" width="414" height="623" alt="Наталья Воловик" class="staff__second lazy loaded" data-was-processed="true">
                             <div class="staff__info staff__info--right">
                                 <p class="staff__position">
                                     Мастер
@@ -734,12 +734,12 @@
                     <p class="customer-form__text">
                         Оставте свои контакты<br> и мы свяжемся с Вами незамедлительно
                     </p>
-                    <form action="./send.php" method="post" class="record-form">
+                    <form action="send.php" method="post" class="record-form">
                         <p class="customer-form__item">
                             <label for="customer-name" class="visually-hidden">
                                 Ваше имя
                             </label>
-                            <input type="text" class="input input--black" name="first_name" id="customer-name" placeholder="Имя" required>
+                            <input type="text" class="input input--black" id="customer-name" name="first_name" placeholder="Имя" required>
                         </p>
                         <p class="customer-form__item">
                             <label for="customer-phone" class="visually-hidden">
@@ -801,7 +801,7 @@
             </div>
             <div class="contacts__row grid-row">
                 <div class="contacts__map grid-column">
-                    <img src="img/map.jpg" width="1110" height="652" alt="Киев, м. Оболонь, ул. Иорданская 9г">
+                    <img class="lazy loaded" data-src="img/map.jpg" src="img/map.jpg" data-was-processed="true" width="1110" height="652" alt="Киев, м. Оболонь, ул. Иорданская 9г">
                     <iframe class="contacts__location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.028228462573!2d30.500885715733023!3d50.49643237948175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d206df689287%3A0xc6b0a1c2de47ccde!2z0LLRg9C70LjRhtGPINCZ0L7RgNC00LDQvdGB0YzQutCwLCA50JMsINCa0LjRl9CyLCAwNDIxMQ!5e0!3m2!1suk!2sua!4v1563437578415!5m2!1suk!2sua" width="1110" height="651" allowfullscreen></iframe>
                 </div>
                 <div class="contacts__content grid-column">
