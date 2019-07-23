@@ -5,7 +5,7 @@ $('.review-slider').slick({
     slidesToShow: 1,
     prevArrow: $('.slider-wrap__button--prev'),
     nextArrow: $('.slider-wrap__button--next'),
-    adaptiveHeight: true
+    adaptiveHeight: false
 });
 
 
@@ -46,3 +46,7 @@ $(".menu-list .anchor").on("click", function () {
 
 $("[data-mask='callback-catalog-phone']").mask("+38 (999) 999  99  99");
 
+
+$(".close").on("click", function(){
+    $(".modal").removeClass("modal--open");
+});
