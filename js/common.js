@@ -50,3 +50,29 @@ $("[data-mask='callback-catalog-phone']").mask("+38 (999) 999  99  99");
 $(".close").on("click", function(){
     $(".modal").removeClass("modal--open");
 });
+
+
+
+$('.form-send').submit(function(){
+    var form = $(this);
+    var first_name = form.find($('input[name=first_name]')).val()
+    var phone = form.find($('input[name=phone]')).val()
+
+
+    $.ajax({
+        url: 'send.php',
+        data: {
+            first_name: first_name,
+            phone: phone
+        },
+        method: 'POST',
+        success: function (data) {
+            $('.modal--thanks').addClass('modal--open');
+            form[0].reset()
+        },
+        error : function () {
+            alert('Error!!!');
+        }
+    });
+    return false;
+});

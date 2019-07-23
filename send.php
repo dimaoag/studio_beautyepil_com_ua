@@ -22,6 +22,8 @@ $text = "Новый заказ с сайта {$serverName} Имя - {$first_name
 
 $url = "https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=$text";
 
-file_get_contents($url );
+file_get_contents($url);
 
-header('Location: index.html');
+//header('Location: index.html');
+
+echo 'success';
